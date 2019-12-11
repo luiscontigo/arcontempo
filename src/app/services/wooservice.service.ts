@@ -10,9 +10,9 @@ export class WooserviceService {
 
   getProducts() {
   const api = new WooCommerceRestApi({
-    url: 'http://example.com',
-    consumerKey: 'ck_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
-    consumerSecret: 'cs_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+    url: 'http://artcontemporaneo.com',
+    consumerKey: 'ck_0c7f5ac77dcdcd6ac0da9c5b5c5f624da8e38847',
+    consumerSecret: 'cs_87efabeeebea71007a7b93c6d59d60179b02df47',
     version: 'wc/v3'
     });
   }
