@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import { WoodpressService } from '../services/woodpress.service';
-import { LoadingController } from '@ionic/angular';
-// import { WooserviceService } from '../services/wooservice.service';
+// import { WoodpressService } from '../services/woodpress.service';
+// import { LoadingController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
@@ -15,26 +14,24 @@ export class Tab1Page {
   count = null;
 
   constructor(
-    private wp: WoodpressService,
-    private loadingCtrl: LoadingController
-    // private wS: WooserviceService
+    // private wp: WoodpressService,
+    // private loadingCtrl: LoadingController
   ) {
-    // this.wS.getProducts();
-    this.loadPosts();
+    // this.loadPosts();
   }
 
-  async loadPosts() {
-    const loading = await this.loadingCtrl.create({
-      message: 'Awantame tantito...'
-    });
-    await loading.present();
+  // async loadPosts() {
+  //   const loading = await this.loadingCtrl.create({
+  //     message: 'Awantame tantito...'
+  //   });
+  //   await loading.present();
  
-    this.wp.getProducts().subscribe(res => {
-      this.count = this.wp.totalProducts;
-      this.posts = res;
-      console.log(this.posts);
-      loading.dismiss();
-    });
-  }
+  //   this.wp.getProducts().subscribe(res => {
+  //     this.count = this.wp.totalProducts;
+  //     this.posts = res;
+  //     console.log(this.posts);
+  //     loading.dismiss();
+  //   });
+  // }
 
 }
